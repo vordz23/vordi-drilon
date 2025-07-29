@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vordi Drilon | SEO Specialist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Import Spotify Mix font */
+      @font-face {
+        font-family: 'Spotify Mix';
+        src: url('https://open.spotifycdn.com/cdn/fonts/spotify-mix/woff/SpotifyMix_W_NR.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'Spotify Mix';
+        src: url('https://open.spotifycdn.com/cdn/fonts/spotify-mix/woff/SpotifyMix_W_Bd.woff2') format('woff2');
+        font-weight: bold;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: 'Spotify Mix';
+        src: url('https://open.spotifycdn.com/cdn/fonts/spotify-mix/woff/SpotifyMix_W_Blk.woff2') format('woff2');
+        font-weight: 900; /* Corresponds to font-black in Tailwind */
+        font-style: normal;
+      }
+      
+      body {
+        font-family: 'Spotify Mix', sans-serif;
+      }
+
+      /* Custom scrollbar for a more Spotify-like feel */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #121212;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #535353;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #7a7a7a;
+      }
+
+      /* Offset for fixed header on scroll */
+      main section {
+        scroll-margin-top: 5rem; /* 80px, gives breathing room below the 64px mobile header */
+      }
+      @media (min-width: 1024px) { /* lg breakpoint */
+        main section {
+            scroll-margin-top: 2rem; /* 32px, for the top bar on desktop */
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.1.1",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.1/",
+    "react/": "https://esm.sh/react@^19.1.1/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.532.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-[#121212]">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
